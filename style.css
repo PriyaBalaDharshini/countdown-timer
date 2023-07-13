@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(pink,skyblue);
+    background-size: cover; /* if we add image, it will adopt according to the image. */
+    background-position: center;
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    /* gap: 10px */
+}
+p{
+    font-size: 15px;
+    text-decoration: underline;
+    font-family: poppins;
+}
+
+.newyear{
+    font-family: inspiration;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+/* h2 inside the .box */
+.box h2{
+font-size: 15px;
+}
+.box small{
+    font-size: 10px;
+    
+}
+
+/* 1 to 47 for mobile */
+/* medium device  */
+@media (min-width:576px) {
+    .newyear{
+        font-size: 80px;
+        
+    }
+    p{
+        font-size: 25px;
+        font-family: poppins;
+    }
+    .box h2{
+        font-size: 20px;
+    }
+    .box{
+        width: 70px;
+        height: 70px;
+        text-align: center;
+    }
+    .box small{
+        font-size: 15px;
+    }
+    
+}
+@media (min-width:768px) {
+    .newyear{
+        font-size: 100px;
+    }
+    p{
+        font-size: 50px;
+        font-family: poppins;
+    }
+    .box h2{
+        font-size: 25px;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+    .box small{
+        font-size: 20px;
+    }
+}
